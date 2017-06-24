@@ -12,7 +12,9 @@ SingleLinkNode* reverseLinkedList(SingleLinkNode* head){
 	if(head == NULL)
 		return NULL;
 	
-	SingleLinkNode* pre=NULL,cur=head,next=head->next;
+	SingleLinkNode* pre=NULL;
+	SingleLinkNode* cur=head;
+	SingleLinkNode* next=head->next;
 	
 	while(next != NULL){
 		cur->next = pre;
